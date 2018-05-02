@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HAIs Across the US</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="navbar">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Main</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href = "number_of_beds_by_owner.html" >Number of Beds by Owner/Funding Source</a></li>
+                  <li><a href = "average_infections_by_owner.html">Average Infections by Owner/Funding Source</a></li>
+                  <li><a href="number_of_beds_by_facility_type.html">Number of Beds By Facility Type</a></li>
+                  <li><a href="average_infections_by_facility_type.html">Average Infections by Facility Type</a></li>
+                  <li><a href="http://spinster.org/elim_contents/images/user_friendly_1997.jpg">   </a></li>
+              </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparisons<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="comparison1.html">Comparison by Owner/Funding</a></li>
+                  <li><a href="comparison2.html">Comparison by Facility Type</a></li>
+                </ul>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="data.html">Full Data</a></li>
+              <li><a href="numerical_data.html">Raw Numerical Data</a></li>
+            </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- /.navbar-collapse -->
+
+      <!-- /.container-fluid -->
+
+    <!-- End of navbar -->
+    <div class = "container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="content">
+            <h1>Hospital Acquired Infections</h1>
+            <h2>Summary: Analysis and Findings</h2>
+            <hr>
+            <img src="https://github.com/maelingmak/HAI/blob/master/png/observed_infections_by_bed.png">
+            <p>
+              The purpose of this project was to seek any correlation between hospital
+              size, source of funding, and type of facility to the incidence of Hospital Associated
+              Infections. Using HAI data from data.gov and hospital demographic data
+              of approximately 4000 hospitals, each infection measure was analyzed against
+              each hospital demographic.
+            </p>
+            <p>
+              Data cleaning was exhaustive and comprehensive, skewing the results by
+              hospital type, due to absence of data reported by the hospitals.
+            </p>
+            <p>
+              We used matplotlib to graph each of the infection types against the number
+              of beds per facility. However, due to underreporting per hospital type, no
+              valid conclusion could be made.
+            </p>
+            <p>
+              This scatter plot represents the variety of infections across all hospital types,
+              based on the number of beds in each hospital. The dot size is proportional to the
+              percentage of each infection.
+            </p>
+            <p>
+              This visualization shows that the incidence of <i>Clostridium difficile</i> infection
+              is not dependent on hospital size, ocurring in greater cases for larger hospitals,
+              but with a smaller percentage due to more beds.
+            </p>
+            <p>
+              CDI is common in long hospital stays due to antibiotic use and overuse and it's transmissibility.
+              Based on the data available, it is unclear as to what role infection control procedures affect the transmission.
+              The data also lacks clinical correlation of CDI cases due to antibiotic use, as this is difficult to determine, thefore not reported.
+            </p>
+            <br>
+            <img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/observed_infections_by_bed.png" alt="Observed Infections Scatter" style="width:700px;height:400px;">
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <div id="images_header">
+
+            <a href="number_of_beds_by_owner.html"><img src ="https://raw.githubusercontent.com/maelingmak/HAI/master/png/beds_by_owner.png" alt="Bar Chart of Beds per Owner" class="imageNav-photo"></a>
+            <a href="average_infections_by_owner.html"><img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/avg_infect_by_owner.png" alt="Average Infections by Owner" class="imageNav-photo"></a>
+            <a href="number_of_beds_by_facility_type.html"><img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/beds_by_type.png" alt="Number of Beds by Facility Type" class="imageNav-photo" ></a>
+            <a href="average_infections_by_facility_type.html"><img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/average_infections_by_facility_type.png" alt="Average Infections by Facility Type" class="imageNav-photo"></a>
+            </div>
+              </div>
+          </section>
+        </div>
+
+
+      </section>
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
