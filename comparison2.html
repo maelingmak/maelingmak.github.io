@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Average Infections by Owner</title>
+    <title>Comparison by Facility Types</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
@@ -71,38 +71,28 @@
       <!-- /.container-fluid -->
 
     <!-- End of navbar -->
-     <div class = "container">
-      <section class="row">
-        <div class="col-md-8">
-          <article class="content">
+<div class = "container">
+    <article class="content row">
+        <div class="col-md-12">
+          <h1>
+              Comparison of Number of Beds per Facility Type to Average Infection Rates
+            </h1><br>
+<div class="col-md-6">
+          <img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/beds_by_type.png" alt="Number of Beds by Facility Type" style="width:500px;height:300px;">
+          </div>
+<div class="col-md-6">
+            <img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/average_infections_by_facility_type.png" alt="Average Infections by Facility Type" style="width:500px;height:300px;">
+          </div>
 
+            <p>
+              Comparing the number of beds to the average number of infections per facilty type, it is clear that there is too much missing data for number of infections to make any meaningful conclusion with this data set.
+            </p>
 
-<h1>Average Infections by Owner/Funding Source</h1><br>
-      <img src="https://raw.githubusercontent.com/maelingmak/HAI/master/png/avg_infect_by_owner.png" alt="Average Infections by Hospital Owner" style="width:900px;height:500px;">
-    <br><br><br>
-
-    <p>
-      The average number of infections is directly proportional to the number of beds in state owned and non-profit hospitals.
-    </p>
-
-    <p>
-      Federal, regional, and private hospitals have a lower overall average infection rate.
-    </p>
-
-
-  <p>
-    Please note that local and district hospitals were fewer in number, therefore we combined them into the category Regional
-      </p>
-
-
-
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-              </article>
-        </div>
-       </section>
+      </div>
+  </article>
     </div>
-
   </body>
 </html>
